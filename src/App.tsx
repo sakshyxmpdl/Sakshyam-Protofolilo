@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, useScroll } from 'motion/react';
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
@@ -46,6 +47,9 @@ export default function App() {
 
       {/* Footer */}
       <Footer profile={profile} />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
